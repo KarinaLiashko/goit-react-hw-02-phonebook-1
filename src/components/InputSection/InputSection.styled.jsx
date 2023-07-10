@@ -21,13 +21,18 @@ display: flex;
 `;
 
 export const Input = styled.input`
-min-width: 250px;
-  min-height: 26px;
+display: flex;
+  justify-content: center;
+  align-items: center;
+
+min-width: 100px;
+  min-height: 30px;
   padding: 1px 5px;
   font-size: 16px;
   outline: none;
   border-radius: 5px;
   border-width: 0;
+   border: 1px black solid;
 `;
 
 export const Button = styled.button`
