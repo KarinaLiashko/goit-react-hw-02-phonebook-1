@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import { Formik } from 'formik';
+// import { Formik } from 'formik';
 import { Form, Label, Input, Button } from './InputSection.styled';
 
 class InputSection extends Component {
