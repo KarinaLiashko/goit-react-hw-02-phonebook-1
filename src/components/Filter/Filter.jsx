@@ -14,6 +14,7 @@ class Filter extends Component {
   };
 
   render() {
+
     const { filter } = this.state;
     return (
       <FindContacts>
@@ -33,5 +34,5 @@ export default Filter;
 
 Filter.propTypes = {
   value: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired,
+  handleChange: PropTypes.func.isRequired,
 };
