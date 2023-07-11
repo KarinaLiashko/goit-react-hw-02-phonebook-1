@@ -55,7 +55,8 @@ export class App extends Component {
       return (
         <Container>
           <InputSection onSubmit={this.handleFormSubmit} />
-          {this.state.contacts.length > 0 && (<>
+          {this.state.contacts.length > 0 && (
+            <>
             <h2>Contacts</h2>
             <Filter value={filter} onChange={this.changeFilter} />
           </>)}

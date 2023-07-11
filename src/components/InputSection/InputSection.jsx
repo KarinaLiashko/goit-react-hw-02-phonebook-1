@@ -36,9 +36,9 @@ class InputSection extends Component {
                         <p>Name:</p>
                         <Input
                             type="text"
-                            name={name}
-                            pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
-                            title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
+                            id="name"
+                            name="name"
+                            value={name}
                             onChange={this.OnInputChange}
                             required
                         />
@@ -48,9 +48,10 @@ class InputSection extends Component {
                         <p>Number:</p>
                         <Input
                             type="tel"
-                            name={number}
+                            id="numer"
+                            name="number"
+                            value={number}
                             pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
-                            title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
                             onChange={this.OnInputChange}
                             required
                         />
@@ -63,7 +64,7 @@ class InputSection extends Component {
 }
 
 InputSection.propTypes = {
-    handleSubmitForm: PropTypes.func,
+    onSbmit: PropTypes.func.isRequired,
 };
 
 export default InputSection;
